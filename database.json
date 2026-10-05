@@ -1,0 +1,319 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password123",
+      "role": "admin",
+      "name": "Dr. Sarah Jenkins"
+    },
+    {
+      "id": 2,
+      "username": "doctor",
+      "password": "password123",
+      "role": "doctor",
+      "name": "Dr. Alexander Patel",
+      "specialization": "Cardiologist"
+    },
+    {
+      "id": 3,
+      "username": "patient",
+      "password": "password123",
+      "role": "patient",
+      "name": "John Doe",
+      "age": 34,
+      "gender": "Male",
+      "contact": "+1 (555) 019-2834",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": 4,
+      "username": "pharmacist",
+      "password": "password123",
+      "role": "pharmacist",
+      "name": "Emily Stone"
+    },
+    {
+      "id": 5,
+      "username": "receptionist",
+      "password": "password123",
+      "role": "receptionist",
+      "name": "Michael Vance"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Alexander Patel",
+      "specialization": "Cardiology",
+      "hours": "09:00 AM - 05:00 PM",
+      "fee": 150,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Olivia Martinez",
+      "specialization": "Pediatrics",
+      "hours": "08:00 AM - 02:00 PM",
+      "fee": 120,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": 3,
+      "name": "Dr. William Chen",
+      "specialization": "Neurology",
+      "hours": "01:00 PM - 07:00 PM",
+      "fee": 200,
+      "available": false,
+      "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Sophia Ross",
+      "specialization": "Dermatology",
+      "hours": "10:00 AM - 04:00 PM",
+      "fee": 130,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": 1782895602715,
+      "name": "Dr.Ragnor Lothbrok",
+      "specialization": "General Medicine",
+      "hours": "10:00 AM - 3:00 PM",
+      "fee": 250,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=150"
+    }
+  ],
+  "patients": [
+    {
+      "id": 101,
+      "name": "John Doe",
+      "age": 34,
+      "gender": "Male",
+      "contact": "+1 (555) 019-2834",
+      "email": "john.doe@example.com",
+      "allergies": "Skin",
+      "bloodGroup": "O+",
+      "emergencyContact": "Jane Doe (+1 555-019-2835)",
+      "history": "Diagnosed with Hypertension in 2024. Regular checkups."
+    },
+    {
+      "id": 102,
+      "name": "Emma Watson",
+      "age": 29,
+      "gender": "Female",
+      "contact": "+1 (555) 048-9213",
+      "email": "emma.w@example.com",
+      "allergies": "Peanuts",
+      "bloodGroup": "A-",
+      "emergencyContact": "David Watson (+1 555-048-9214)",
+      "history": "Asthma patient since childhood. Uses Albuterol inhaler."
+    },
+    {
+      "id": 103,
+      "name": "Robert Downey",
+      "age": 45,
+      "gender": "Male",
+      "contact": "+1 (555) 091-8832",
+      "email": "robert.d@example.com",
+      "allergies": "None",
+      "bloodGroup": "B+",
+      "emergencyContact": "Susan Downey (+1 555-091-8833)",
+      "history": "Post-surgery recovery for ACL repair. In physical therapy."
+    },
+    {
+      "id": 1782895834014,
+      "name": "Kishore A",
+      "age": 21,
+      "gender": "Male",
+      "contact": "+91 7893132412",
+      "email": "aakulakishore8888@gmail.com",
+      "allergies": "None",
+      "bloodGroup": "O+",
+      "emergencyContact": "None",
+      "history": "New Patient Portal Signup"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 501,
+      "patientId": 101,
+      "patientName": "John Doe",
+      "doctorId": 1,
+      "doctorName": "Dr. Alexander Patel",
+      "date": "2026-07-01",
+      "time": "10:00 AM",
+      "status": "Cancelled",
+      "type": "In-person"
+    },
+    {
+      "id": 502,
+      "patientId": 102,
+      "patientName": "Emma Watson",
+      "doctorId": 2,
+      "doctorName": "Dr. Olivia Martinez",
+      "date": "2026-07-02",
+      "time": "11:30 AM",
+      "status": "Completed",
+      "type": "Video"
+    },
+    {
+      "id": 503,
+      "patientId": 103,
+      "patientName": "Robert Downey",
+      "doctorId": 4,
+      "doctorName": "Dr. Sophia Ross",
+      "date": "2026-07-03",
+      "time": "03:00 PM",
+      "status": "Pending",
+      "type": "In-person"
+    },
+    {
+      "id": 1782895862767,
+      "patientId": 101,
+      "patientName": "Kishore A",
+      "doctorId": 1782895602715,
+      "doctorName": "Dr.Ragnor Lothbrok",
+      "date": "2026-07-06",
+      "time": "10:00 AM",
+      "status": "Scheduled",
+      "type": "In-person"
+    },
+    {
+      "id": 1790671601788,
+      "patientId": 101,
+      "patientName": "John Doe",
+      "doctorId": 1,
+      "doctorName": "Dr. Alexander Patel",
+      "date": "2026-09-30",
+      "time": "10:00 AM",
+      "status": "Scheduled",
+      "type": "In-person"
+    }
+  ],
+  "pharmacy": [
+    {
+      "id": 301,
+      "name": "Amoxicillin 500mg",
+      "category": "Antibiotic",
+      "stock": 120,
+      "price": 15.5,
+      "unit": "Box"
+    },
+    {
+      "id": 302,
+      "name": "Paracetamol 500mg",
+      "category": "Analgesic",
+      "stock": 500,
+      "price": 4.2,
+      "unit": "Pack"
+    },
+    {
+      "id": 303,
+      "name": "Metformin 850mg",
+      "category": "Antidiabetic",
+      "stock": 95,
+      "price": 22.0,
+      "unit": "Box"
+    },
+    {
+      "id": 304,
+      "name": "Atorvastatin 20mg",
+      "category": "Cardiovascular",
+      "stock": 75,
+      "price": 35.8,
+      "unit": "Box"
+    },
+    {
+      "id": 305,
+      "name": "Albuterol Inhaler",
+      "category": "Respiratory",
+      "stock": 40,
+      "price": 18.0,
+      "unit": "Piece"
+    }
+  ],
+  "laboratory": [
+    {
+      "id": 401,
+      "patientName": "John Doe",
+      "testName": "Lipid Profile",
+      "date": "2026-06-28",
+      "status": "Completed",
+      "result": "Cholesterol: 185 mg/dL (Normal: <200), HDL: 52 mg/dL (Normal: >40), LDL: 110 mg/dL (Normal: <100)",
+      "file": "lipid_report_101.pdf"
+    },
+    {
+      "id": 402,
+      "patientName": "Emma Watson",
+      "testName": "Complete Blood Count (CBC)",
+      "date": "2026-06-29",
+      "status": "Completed",
+      "result": "WBC: 6.5 x10^3/uL, RBC: 4.8 x10^6/uL, Hemoglobin: 13.8 g/dL, Platelets: 250 x10^3/uL (All within normal ranges)",
+      "file": "cbc_report_102.pdf"
+    },
+    {
+      "id": 403,
+      "patientName": "Robert Downey",
+      "testName": "Liver Function Test",
+      "date": "2026-07-02",
+      "status": "Pending",
+      "result": "Pending laboratory verification.",
+      "file": ""
+    }
+  ],
+  "billing": [
+    {
+      "id": 801,
+      "patientName": "John Doe",
+      "description": "Cardiology Consultation + ECG Test",
+      "amount": 250.0,
+      "date": "2026-06-30",
+      "status": "Paid",
+      "method": "Credit Card",
+      "insurance": "Blue Cross (90% covered)"
+    },
+    {
+      "id": 802,
+      "patientName": "Emma Watson",
+      "description": "Pediatric Clinic Visit + Lab Test",
+      "amount": 180.0,
+      "date": "2026-06-29",
+      "status": "Unpaid",
+      "method": "-",
+      "insurance": "None"
+    },
+    {
+      "id": 803,
+      "patientName": "Robert Downey",
+      "description": "Pharmacy Prescription (Atorvastatin)",
+      "amount": 35.8,
+      "date": "2026-06-30",
+      "status": "Paid",
+      "method": "Cash",
+      "insurance": "Aetna"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": 601,
+      "patientId": 101,
+      "patientName": "John Doe",
+      "doctorName": "Dr. Alexander Patel",
+      "date": "2026-06-30",
+      "details": "Atorvastatin 20mg - Once daily at bedtime. Limit fatty food intake."
+    },
+    {
+      "id": 602,
+      "patientId": 102,
+      "patientName": "Emma Watson",
+      "doctorName": "Dr. Olivia Martinez",
+      "date": "2026-06-29",
+      "details": "Albuterol Inhaler - 2 puffs as needed for shortness of breath."
+    }
+  ]
+}
